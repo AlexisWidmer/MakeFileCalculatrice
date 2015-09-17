@@ -1,0 +1,37 @@
+Automatisation : soulager l'utilisateur pour faire le moins de manoeuvres manuelles
+
+Construction logicielle : Ensemble des actions à mener faites manuellement
+
+
+
+
+(PDF : impressive)
+
+
+Pour faire un makefile :
+-variables : chaines de caractères (toutes les variables)
+-explicit rules : règle de construction définie par le programmeur (contient la recette de construction)
+-implicit rules : règle de construction déduites par make (recette inutile dans ce cas)
+-prerequisites : les pré-requis de construction pour la règle associée
+-comments : des commentaires lorsque la ligne commence par #
+
+
+VARIABLES :
+-tout sauf ':', '#', '=', ' '
+-valeur d'une variable : ${VAR} ou $(VAR)
+
+affectation de valeur a une variable :
+-le "=" : variable = affectation de valeur DIFFÉRÉ
+-le "?=" : si une variable n'a pas de valeur. Si elle en a une, elle ne remplace pas la valeur.				Affectation de valeur DIFFÉRÉ
+-le ":=" : met la valeur IMMEDIATEMENT dans la variable
+
+
+
+
+REGLES EXPLICITES :
+une règle s'écrit :
+
+nomRegle: fichiersBesoin.1 fichiersBesoin.2 etc ....
+	ligneCommande1
+	ligneCommande2
+	ligneCommandeN
