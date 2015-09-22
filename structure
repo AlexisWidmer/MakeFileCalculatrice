@@ -1,0 +1,11 @@
+Dossier bin avec .so, .a et l'executable
+
+Dossier build avec les .o
+
+Dossier src avec le main.c + Makefile
+
+Dossier lib avec les .c pour faire les librairies + Makefile
+
+Dossier include avec les fichier.h d'include
+
+Le dossier qui contient ceux-là avec un Makefile
